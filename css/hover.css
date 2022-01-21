@@ -1,0 +1,44 @@
+@media screen  and (min-width: 768px)   {
+  
+.menu_outer .menu_link:hover {
+	color: #F53838;
+}
+
+.menu_outer .menu_link:hover:after {
+	width: 100%;
+}
+
+.sign_in:hover {
+ 	color: #F53838;
+}
+
+.sign_up:hover,
+.plan_select_button:hover {
+	background-color: #F53838;
+	color: #ffffff;
+}
+
+.get_started_button:hover {
+	color: #F53838;
+	background-color: #ffffff;
+}
+
+.plan_free_block:hover,
+.plan_standard_block:hover,
+.plan_premium_block:hover {
+
+	border: 2px solid #F53838;
+}
+
+.footer_menu_link:hover {
+	text-decoration: underline;
+	color: black;
+}
+
+
+.left_side_social_link:hover {
+    box-shadow: 0 0 4px rgba(0, 0, 0 ,.3);
+}
+}
+
+
