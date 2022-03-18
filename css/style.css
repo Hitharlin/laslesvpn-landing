@@ -82,22 +82,49 @@ header a {
 	transition: background-color .3s;
 }
 
+.burger {
+	display: none;
+	cursor: pointer;
+    height: 16px;
+    padding: 7px;
+    position: fixed;
+    width: 20px;
+    right: 20px;
+    top: 52px;
+}
+
+.line_1,
+.line_2,
+.line_3 {
+	background-color: darkgray;
+    border-radius: 1px;
+    height: 2px;
+    left: 7px;
+    position: absolute;
+    width: 20px;
+}
+
+.line_1 {
+	top: 9px;
+}
+.line_2 {
+	top: 14px;
+}
+.line_3 {
+	top: 19px;
+}
+
+
+
 .get_started_section {
 	display: flex;
 	justify-content: space-between;
 	margin: 104px auto;
 }
 
-.get_started_box {
-	display: flex;
-	justify-content: space-between;
-}
-
 .get_started_left_side {
-	width: 50%;
+	width: 556px;
 }
-
-
 
 .get_started_left_side h1,
 .get_started_left_side span {
@@ -110,14 +137,6 @@ header a {
 .get_started_left_side p {
 	margin-bottom: 50px;
 	line-height: 30px;
-}
-
-.get_started_right_side {
-	width: 45%;
-}
-
-.get_started_right_side img {
-	width: 100%;
 }
 
 .get_started_button {
@@ -151,41 +170,30 @@ header a {
 	align-items: center;
 }
 
-.statistics_users,
-.statistics_locations,
-.statistics_servers {
+.statistics_items {
 	display: flex;
 	justify-content: center;
-	padding-top: 35px;
-	padding-bottom: 35px;
+	padding: 36px 20px;
 	margin: 38px auto;
 	width: 33%;
 }
 
-.statistics_locations {
-	border-left: 2px solid #EEEFF2;
+.statistics_items:not(:last-child) {
 	border-right: 2px solid #EEEFF2;
 }
 
-.statistics_users div,
-.statistics_locations div,
-.statistics_servers div {
-	width: 76px;
+.statistics_items div {
 	max-width: 100%;
 	margin-left: 36px;
 	vertical-align: baseline;
 	line-height: 30px;
 }
 
-.statistics_users h2,
-.statistics_locations h2,
-.statistics_servers h2 {
+.statistics_items h2 {
 	font-size: 25px;
 }
 
-.statistics_users span,
-.statistics_locations span,
-.statistics_servers span {
+.statistics_items span {
 	font-size: 20px;
 }
 
@@ -242,6 +250,7 @@ header a {
 
 .plan_intro {
 	text-align: center;
+	padding-bottom: 80px;
 }
 
 .plan_section_head {
@@ -254,7 +263,6 @@ header a {
 .plan_description {
 	display: inline-block;
 	line-height: 24px;
-	margin-bottom: 60px;
 	color: #4F5665;
 	width: 556px;
 }
@@ -264,9 +272,7 @@ header a {
 	justify-content: space-between;
 }
 
-.plan_free_block,
-.plan_standard_block,
-.plan_premium_block {
+.plan_block_item {
 	display: flex;
 	flex-direction: column;
 	background-color: #FFFFFF;
@@ -299,9 +305,7 @@ header a {
 	margin-bottom: 20px;
 } 
 
-.plan_free_block h3,
-.plan_standard_block h3,
-.plan_premium_block h3 {
+.plan_block_item h3 {
 	text-align: center;
 	margin-top: 30px;
 	margin-bottom: 30px;
